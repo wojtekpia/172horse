@@ -2,7 +2,7 @@ widgets.map = {
 	render: function(selector,listing) {
 		var centerPt = new google.maps.LatLng(listing.address.lat, listing.address.long);
 		var myOptions = {
-		    zoom: 18,
+		    zoom: 16,
 		    streetViewControl: true,
 		    center: centerPt,
 		    mapTypeId: google.maps.MapTypeId.SATELLITE
