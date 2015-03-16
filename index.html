@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<!--
+
+    AND THEN
+
+    schools: bring back pop-up link
+	get rid of header: http://www.buffiniandcompany.com/homeforsale/
+	css
+		- gradient background for nav, behind main pic
+		- section headers should not be page width - done
+		- agent
+		- contact form
+		- schools
+	nav:  highlight current?
+	get real neighborhood data <-- convert from xml to json. copy redfin metrics + link to walk score & onboard. get from local mls.
+	SEO <-- nodejs?
+	RoyalSlider for pics?
+
+	DONE
+	nav:  scroller with waypoints?
+	features / rooms <-- done
+	map <-- done
+	image gallery <-- done
+	put content into sections <-- done
+	lead form + leads to 8i <-- reduce validation. move code to .js files.
+	builder, designer, neighborhood dummy data <-- done
+	domain: whiterockviewhouse.com
+	lock header to top of screen <-- after some scroll: http://imakewebthings.com/jquery-waypoints/sticky-elements/
+	Fix in IE: ie8 doesn't like columize. Avoid that, and upgrading to ie9.
+	move js into template's init() or render() <-- code cleanup.
+		- rebuild DOM. columizer & sticky elements should work in IE.
+	general layout, no styling.
+	Focus off of schools for lead form to show up nicely
+	css
+		- listing_overview
+		- agent beside overview
+		- map below agent
+	smooth scroll
+		smooth scroll with tabs
+	line up anchor links.
+	nav: jumps around a little.
+	nav: page top and bottom don't work
+	nav: max right
+	schools presentation
+		- dialog with details
+		- table with summary
+		- sort by distance
+		highcharts or raphael
+		for grids you can use Flexigrid
+		clicking on tabs jumps the screen
+	hosting <-- heroku
+	neighborhood info: copy some paragraph from wikipedia
+	google analytics
+    schools - make is look decent, then ship!
+
+
+	Notes:
+	https://www.surreyschools.ca/departments/BMGS/Documents/BOUNDARY%20MAP%20-%20All%20Schools.pdf surrey school catchment map.
+
+	 -->
+
+<html lang="en-US">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>15639 Cliff Ave, White Rock, BC</title>
+	<meta name="description" content="Executive ocean view white rock house for sale">
+
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/listing_header.css" type="text/css">
+	<link rel="stylesheet" href="css/nivo-default.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="screen" />
+
+	<script src="js/plugin/modernizr.custom.js"></script>
+	<script src="js/plugin/underscore-min.js"></script>
+	<script src="js/plugin/jquery-1.8.2.js"></script>
+	<script src="js/plugin/waypoints.min.js"></script>
+	<script src="js/plugin/jquery.nivo.slider.pack.js"></script>
+	<script src="js/plugin/jquery-ui.js"></script>
+	<script src="js/plugin/jquery.columnizer.js"></script>
+
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGboCvPxNO2NCcLsEPSzGxpmSlRUvZfHY&sensor=false"> </script>
+
+	<script type="text/javascript" src="js/custom/code/money.js"></script>
+	<script type="text/javascript" src="js/custom/code/area.js"></script>
+	<script type="text/javascript" src="js/custom/code/percent.js"></script>
+	<script type="text/javascript" src="js/custom/code/tp.js"></script>
+	<script type="text/javascript" src="js/custom/code/scroll.js"></script>
+	<script type="text/javascript" src="js/custom/code/geo.js"></script>
+    <script type="text/javascript" src="js/custom/code/string.js"></script>
+
+	<script type="text/javascript" src="js/custom/code/init.js"></script>
+	<script type="text/javascript" src="js/custom/code/data.js"></script>
+
+	<script type="text/javascript" src="js/custom/template/page_header.js"></script>
+	<script type="text/javascript" src="js/custom/template/listing_header.js"></script>
+	<script type="text/javascript" src="js/custom/template/listing_overview.js"></script>
+	<script type="text/javascript" src="js/custom/template/map.js"></script>
+	<script type="text/javascript" src="js/custom/template/agent.js"></script>
+	<script type="text/javascript" src="js/custom/template/contact_form.js"></script>
+	<script type="text/javascript" src="js/custom/template/listing_features.js"></script>
+	<script type="text/javascript" src="js/custom/template/neighborhoods.js"></script>
+	<script type="text/javascript" src="js/custom/template/designer.js"></script>
+	<script type="text/javascript" src="js/custom/template/builder.js"></script>
+	<script type="text/javascript" src="js/custom/template/page_footer.js"></script>
+	<script type="text/javascript" src="js/custom/template/schools.js"></script>
+	<script type="text/javascript" src="js/custom/template/school.js"></script>
+</head>
+<body>
+
+<div id="wrapper" class="page page-width">
+	<div id="page_header"></div>
+	<div id="listing_header"></div>
+
+	<section id="container">
+		<div class="top_content">
+			<div class="top_main_content page-width">
+				<a id="listing_overview_a" class="anchor"></a>
+				<div id="listing_overview"></div>
+			</div>
+			<div class="top_sideband_content">
+				<div class="next_steps">
+					<div id="contact-form-wrapper"></div>
+					<div id="agent"></div>
+				</div>
+				<div id="map"></div>
+			</div>
+		</div>
+		<br style="clear: left;" />
+		<div class="bottom_content">
+			<a id="listing_features_a" class="anchor"></a>
+			<div id="listing_features"></div>
+			<a id="schools_a" class="anchor"></a>
+			<div id="schools"></div>
+			<a id="neighborhoods_a" class="anchor"></a>
+			<div id="neighborhoods"></div>
+			<a id="designer_a" class="anchor"></a>
+			<div id="designer"></div>
+			<a id="builder_a" class="anchor"></a>
+			<div id="builder"></div>
+		</div>
+	</section>
+	<div id="spacer" style="height:600px"></div>
+
+	<div id="page_footer"></div>
+	<!-- hack to make the last section linkable -->
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$.waypoints.settings.scrollThrottle = 30;
+
+	widgets.page_header.render("#page_header");
+	widgets.listing_header.render("#listing_header",listing);
+	widgets.listing_overview.render("#listing_overview",listing);
+	widgets.map.render("#map",listing);
+	widgets.agent.render("#agent",listing.agent);
+	widgets.contact_form.render("#contact-form-wrapper",listing);
+	widgets.listing_features.render("#listing_features",listing);
+	widgets.neighborhoods.render("#neighborhoods",neighborhoods);
+	widgets.designer.render("#designer");
+	widgets.builder.render("#builder");
+	widgets.page_footer.render("#page_footer", "#wrapper");
+
+  	scroll.smoothScroll();
+	// HACK: jQuery UI tabs don't play nicely with smoothScroll. So rendering schools (which use tabs) after smoothing scroll.
+  	widgets.schools.render("#schools",school_groups,listing);
+
+	$(".address-string").html(listing.address.line + ", " + listing.address.city + ", " + listing.address.state_code);
+
+  	widgets.listing_header.onScroll(null);
+});
+</script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38981246-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</body>
+</html>
