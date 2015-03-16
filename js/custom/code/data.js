@@ -18,8 +18,8 @@ var neighborhoods = [
             }
         },
         "walk_score": {
-            "score": 67,
-            "href": "http://www.walkscore.com/score/15639-cliff-ave-white-rock-bc-canada"
+            "score": 6,
+            "href": "http://www.walkscore.com/score/1528-172-st-surrey-bc-canada"
         },
         "demographics": {
             "href": "http://canada5.onboardnavigator.com/OBCN_Report.aspx?AID=1014-1e6b59db9d2&SFID=1&RTID=1&CID=441&PID=2&STYPE=2&STEXT=v4b&STEXTOPT=&STEXTOPT2=&AgentID=17&AgentEmail=no@thanks.com&Frame=0&Height=600&Width=600"
@@ -89,36 +89,36 @@ var listing = {
     "prop_type": "single_family",
     "title": "freehold_nonstrata",
     "address": {
-        "line": "15639 Cliff Ave",
-        "postal_code": "V4B 1W1",
-        "city": "White Rock",
+        "line": "1528 172nd Street, Surrey",
+        "postal_code": "V4P 2P9",
+        "city": "Surrey",
         "state_code": "BC",
-        "lat": 49.022302,
-        "long": -122.789153
+        "lat": 49.029707,
+        "long": -122.743577
     },
     "parcel_boundary": {
         "type": "Polygon",
         "coordinates": [
             [
                 [
-                    -122.789258,
-                    49.022061
+                    -122.746146,
+                    49.030169
                 ],
                 [
-                    -122.789258,
-                    49.02265
+                    -122.740789,
+                    49.030208
                 ],
                 [
-                    -122.789048,
-                    49.02265
+                    -122.740737,
+                    49.029360
                 ],
                 [
-                    -122.789048,
-                    49.022061
+                    -122.746095,
+                    49.029327
                 ],
-                [
-                    -122.789258,
-                    49.022061
+		[
+                    -122.746146,
+                    49.030169
                 ]
             ]
         ]
@@ -126,28 +126,28 @@ var listing = {
     "neighborhood": [
         "White Rock - Hillside"
     ],
-    "price": 2688800,
-    "bed": 5,
+    "price": 2800000,
+    "bed": 4,
     "bath": {
-        "total": 5,
-        "full": 4,
-        "half": 1
+        "total": 3,
+        "full": 3,
+        "half": 0
     },
     "status": "active",
     "style": "Two story with basement",
     "sqft": 5448,
     "lot": {
-        "sqft": 11978,
+        "sqft": 369388,
         "frontage": 60,
         "depth": 197
     },
     "id": 259868576,
     "list_date": "2012-10-24T12:44:13Z",
     "update_date": "2012-10-28T12:44:13Z",
-    "year_built": 2013,
+    "year_built": 1999,
     "mls": {
         "listing": {
-            "id": "F1226274"
+            "id": "F1434591"
         },
         "name": "Fraser Valley Real Estate Board"
     },
@@ -156,7 +156,7 @@ var listing = {
         "href": "images/3999_{i}_mls_{s}.jpg"
     },
     "zoning": "Residential detached",
-    "description": "This acclaimed Lottery Home Builder and Designer have teamed up again for another stunning home. Attention to detail in this modern seaside home featuring panoramic sweeping ocean views on a coveted 11000 SF lot. This home plan features a large kitchen with top quality custom cabinets, wok kitchen and wine room opening up to a large greatroom to soak in that ocean view. Large covered patio decks with a fireplace. The front of the home has a retractable door from floor to ceiling and the back of home looks out onto the private and expansive yard. The Mbedroom view is breathtaking with double french doors opening onto your private deck. Additional features include Elevator rough-in, 3 zone high efficiency with heat pump, media rm.",
+    "description": "Stunning Semiahmoo Acreage with a profitable business. This rare opportunity offers peaceful country living with a spacious home including a 2bed suite. Enjoy the luxuries of country living close to the beach, including 20ft vaulted ceilings overlooking your wrap around south facing deck and hot tub. Easy access to the 99 & all shops & amenities. This property offers a state of the art indoor 100x60 riding arena, 42 stall 200x72 barn, 200x100 outdoor arena, 60' round pen, 4 tack rooms, & all amenities to facilitate a productive and thriving boarding facility/riding school. Conveniently located office space with washroom and living quarters for hired help, are in addition to a fully serviced shop 50x50 with a 600ft mezzanine.",
     "features": [
         {
             "category": "Interior Features",
