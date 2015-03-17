@@ -152,7 +152,7 @@ var listing = {
         "name": "Fraser Valley Real Estate Board"
     },
     "photo": {
-        "count": 40,
+        "count": 31,
         "href": "images/photo-{i}-{s}.jpg"
     },
     "zoning": "Residential detached",
