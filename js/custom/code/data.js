@@ -295,7 +295,7 @@ var listing = {
         "href": "http://www.sheenareimer.com",
         "email": "sheenareimer@gmail.com",
         "photo": {
-            "href": "http://www.sheenareimer.com/photo_cur_size.jpg"
+            "href": "images/sheena.jpg"
         },
         "slogan": "Your Local White Rock Realtor",
         "tp": {
@@ -307,7 +307,31 @@ var listing = {
             },
             "slogan": "Higher Standards Agents... Higher Results"
         }
+    },
+    "colist_agent": {
+        "name": {
+            "full": "Linda Shaver",
+            "first": "Linda",
+            "last": "Shaver"
+        },
+        "phone": [
+            {
+                "number": "(604) 832-8467",
+                "type": "Mobile"
+            },
+            {
+                "number": "(604) 531-1111",
+                "type": "Office"
+            }
+        ],
+        "href": "http://lindashaver.ca",
+        "email": "lmt.shaver@gmail.com",
+        "photo": {
+            "href": "images/linda.jpg"
+        },
+        "slogan": "Because today's decisions are tomorrow's results"
     }
+    
 };
 
 var school_groups = [

@@ -239,7 +239,7 @@ body {
 	background: -webkit-linear-gradient(top,#FDF8CF,#FBEF8A);/* for chrome, webkit browsers */
 	background: -moz-linear-gradient(center top , #FDF8CF, #FBEF8A) repeat scroll 0 0 transparent;/* for FF */
 	border: 2px solid #FBDE6E;
-	height:400px;
+	height:550px;
 }
 
 .next_steps_separator {
