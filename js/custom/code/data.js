@@ -124,7 +124,7 @@ var listing = {
         ]
     },
     "neighborhood": [
-        "White Rock - Hillside"
+        "Pacific Douglas"
     ],
     "price": 2800000,
     "bed": 4,
@@ -138,8 +138,8 @@ var listing = {
     "sqft": 4216,
     "lot": {
         "sqft": 369388,
-        "frontage": 60,
-        "depth": 197
+        "frontage": 286,
+        "depth": 1286
     },
     "id": 259868576,
     "list_date": "2012-10-24T12:44:13Z",
