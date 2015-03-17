@@ -135,7 +135,7 @@ var listing = {
     },
     "status": "active",
     "style": "Two story with basement",
-    "sqft": 5448,
+    "sqft": 4216,
     "lot": {
         "sqft": 369388,
         "frontage": 60,
@@ -153,7 +153,7 @@ var listing = {
     },
     "photo": {
         "count": 40,
-        "href": "images/3999_{i}_mls_{s}.jpg"
+        "href": "images/photo-{i}-{s}.jpg"
     },
     "zoning": "Residential detached",
     "description": "Stunning Semiahmoo Acreage with a profitable business. This rare opportunity offers peaceful country living with a spacious home including a 2bed suite. Enjoy the luxuries of country living close to the beach, including 20ft vaulted ceilings overlooking your wrap around south facing deck and hot tub. Easy access to the 99 & all shops & amenities. This property offers a state of the art indoor 100x60 riding arena, 42 stall 200x72 barn, 200x100 outdoor arena, 60' round pen, 4 tack rooms, & all amenities to facilitate a productive and thriving boarding facility/riding school. Conveniently located office space with washroom and living quarters for hired help, are in addition to a fully serviced shop 50x50 with a 600ft mezzanine.",
