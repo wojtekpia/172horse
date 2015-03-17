@@ -89,7 +89,7 @@ var listing = {
     "prop_type": "single_family",
     "title": "freehold_nonstrata",
     "address": {
-        "line": "1528 172nd Street, Surrey",
+        "line": "1528 172nd Street",
         "postal_code": "V4P 2P9",
         "city": "Surrey",
         "state_code": "BC",
