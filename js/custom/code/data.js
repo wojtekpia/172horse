@@ -159,55 +159,64 @@ var listing = {
     "description": "Stunning Semiahmoo Acreage with a profitable business. This rare opportunity offers peaceful country living with a spacious home including a 2bed suite. Enjoy the luxuries of country living close to the beach, including 20ft vaulted ceilings overlooking your wrap around south facing deck and hot tub. Easy access to the 99 & all shops & amenities. This property offers a state of the art indoor 100x60 riding arena, 42 stall 200x72 barn, 200x100 outdoor arena, 60' round pen, 4 tack rooms, & all amenities to facilitate a productive and thriving boarding facility/riding school. Conveniently located office space with washroom and living quarters for hired help, are in addition to a fully serviced shop 50x50 with a 600ft mezzanine.",
     "features": [
         {
-            "category": "Interior Features",
+            "category": "Features",
             "features": [
                 {
-                    "title": "Equipment",
+                    "title": "",
                     "features": [
-                        "Elevator rough-in"
-                    ]
-                },
-                {
-                    "title": "Heating & Cooling",
-                    "features": [
-                        "Air conditioning"
-                    ]
-                },
-                {
-                    "title": "Rooms",
-                    "features": [
-                        "Kitchen: 15' x 11'",
-                        "Master bedroom: 14' x 17'",
-                        "Family room: 14' x 19'",
-                        "Great room: 20' x 21'",
-                        "Laundry: 13' x 10'",
-                        "Bedroom: 11' x 17'",
-                        "Bedroom: 11' x 13'",
-                        "Bedroom: 14' x 12'",
-                        "Bedroom: 11' x 11'",
-                        "Eating Area: 12' x 17'",
-                        "Entrance Hall: 8' x 13'",
-                        "Media Room: 19' x 18'",
-                        "Recreation Room: 19' x 19'",
-                        "Wine Room: 9' x 12'",
-                        "Wine Room: 5' x 3'",
-                        "Wok Kitchen: 9' x 3'"
+                        "Hot Tub Spa/Swirlpool",
+			"Smoke Alarm",
+			"Thermo Windows",
+			"Built-In Vacuum",
+			"Clothes Washer/Dryer",
+			"Fridge/Stove/Dishwasher",
+			"Vaulted Ceiling"
                     ]
                 }
             ]
         },
         {
+	            "category": "Amenities",
+	            "features": [
+	                {
+	                    "title": "",
+	                    "features": [
+	                        "In Suite Laundry",
+				"Storage",
+				"Swirlpool/Hot Tub",
+				"Workshop Detached",
+				"Barn"
+	                    ]
+	                }
+	            ]
+        },
+        {
             "category": "Property / Lot Details",
             "features": [
                 {
-                    "title": "View",
+                    "title": "",
                     "features": [
-                        "Panoramic ocean view",
-                        "Baker view"
+                        "Private Setting",
+			"Private Yard",
+			"Cleared",
+			"Recreation Nearby",
+			"Shopping Nearby"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Costs",
+            "features": [
+                {
+                    "title": "",
+                    "features": [
+                        "Property Tax Est: $2,028"
                     ]
                 }
             ]
         }
+        
     ],
     "rooms": [
         {
